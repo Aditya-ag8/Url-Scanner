@@ -1,0 +1,122 @@
+/* Warning banner styles */
+.safelink-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2147483647;
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.safelink-warning-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.safelink-warning-icon {
+  font-size: 48px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.safelink-warning-text {
+  flex: 1;
+}
+
+.safelink-warning-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.safelink-warning-text p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.safelink-warning-details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.safelink-warning-details li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.safelink-warning-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.safelink-warning-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.safelink-warning-actions {
+  display: flex;
+  gap: 15px;
+  padding: 0 30px 20px 30px;
+  justify-content: flex-end;
+}
+
+.safelink-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.safelink-btn-danger {
+  background: white;
+  color: #ff4b2b;
+}
+
+.safelink-btn-danger:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.safelink-btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.safelink-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
