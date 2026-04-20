@@ -1,9 +1,9 @@
 
 // API Keys (Users need to add their own keys)
 const API_KEYS = {
-  virusTotal: '89e804f4bc633caab0fbb27658c6ccfef5e1eaeac96c87cb38dff020987e049b',
-  googleSafeBrowsing: 'AIzaSyAnkJLBBxe-XHMpXX3QMJV4X3BrDPIfibU',
-  urlScan: '019c45ba-3fe0-7538-acab-92ea22af0315'
+  virusTotal: 'API KEY',
+  googleSafeBrowsing: 'API KEY',
+  urlScan: 'API KEY'
 };
 
 // Cache to store scan results (avoid duplicate scans)
